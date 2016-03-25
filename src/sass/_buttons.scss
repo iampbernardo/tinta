@@ -54,6 +54,14 @@ input.btn {
   @include make-btn--outline($grey-dark);
 }
 
+.btn--sexy {
+  @include make-btn--default($sexy-color);
+}
+
+.btn--outline--sexy {
+  @include make-btn--outline($sexy-color);
+}
+
 .btn--full {
   display: block;
   width: 100%;

@@ -1,0 +1,9 @@
+code,
+.code {
+  border: 1px solid lighten($grey-light, 15%);
+  color: $sexy-color;
+  padding: 0 .2em;
+  border-radius: 2px;
+  background: lighten($grey-lighter, 2%);
+  text-shadow: 0px 1px $grey-lighter;
+}

@@ -493,6 +493,23 @@ input.btn {
     border-color: transparent;
     color: #FFF; }
 
+.btn--sexy {
+  background-color: #e50c39;
+  border-color: #e50c39;
+  color: #FFF; }
+  .btn--sexy:hover {
+    background-color: #9c0827;
+    border-color: #9c0827; }
+
+.btn--outline--sexy {
+  background-color: transparent;
+  border-color: #e50c39;
+  color: #e50c39; }
+  .btn--outline--sexy:hover {
+    background: #e50c39;
+    border-color: transparent;
+    color: #FFF; }
+
 .btn--full {
   display: block;
   width: 100%; }
@@ -690,3 +707,12 @@ main:last-of-type {
 
 .container-full {
   max-width: 100%; }
+
+code,
+.code {
+  border: 1px solid #9ea8ad;
+  color: #e50c39;
+  padding: 0 .2em;
+  border-radius: 2px;
+  background: #f6f7f8;
+  text-shadow: 0px 1px #f1f2f3; }
