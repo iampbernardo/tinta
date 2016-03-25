@@ -1,3 +1,32 @@
 /* Base colors */
 
-$grey : #404040;
+$grey: #404040;
+$grey-dark: darken($grey, 5%);
+$grey-light: lighten($grey, 15%);
+$grey-lighter: lighten($grey-light, 15%);
+
+/* Fonts */
+$base-font-size: 16px;
+$font-base-color: $grey;
+
+
+/* Sizes and spaces */
+$gutter: 1em;
+$container-padding: $gutter;
+
+/* Breakpoints */
+// based on Twitter Bootstrap
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px
+) !default;

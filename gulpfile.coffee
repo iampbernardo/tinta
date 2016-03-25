@@ -10,6 +10,12 @@ gulp.task 'sass', ->
   .pipe(sass().on('error', sass.logError))
   .pipe(gulp.dest('./dist/css'))
 
+  gulp.src('./src/sass/docs.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(gulp.dest('./dist/css'))
+
+
+
 gulp.task 'sass:watch', ->
   gulp.watch('./src/sass/**/*.scss', ['sass'])
 
