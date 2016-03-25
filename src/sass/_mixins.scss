@@ -28,3 +28,7 @@
     clear: both;
   }
 }
+
+@mixin make-circle {
+  border-radius: 50% !important;
+}

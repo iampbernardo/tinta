@@ -1,0 +1,66 @@
+@mixin make-btn($radius: $buttons-radius) {
+  border-radius: $radius;
+}
+
+@mixin make-btn--default($color) {
+  background-color: $color;
+  border-color: $color;
+  color: #FFF;
+  &:hover {
+    background-color: darken($color, 15%);
+    border-color: darken($color, 15%);
+  }
+}
+
+@mixin make-btn--outline($color) {
+  background-color: transparent;
+  border-color: $color;
+  color: $color;
+  &:hover {
+    background: $color;
+    border-color: transparent;
+    color: #FFF;
+  }
+}
+
+a.btn,
+button.btn,
+input.btn {
+  @include make-btn();
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-sans-serif;
+  padding: $gutter $gutter*2;
+  text-align: center;
+  white-space: nowrap;
+  &:hover {
+    transition: all .3s linear;
+  }
+}
+
+.btn--default {
+  @include make-btn--default($brand-primary);
+}
+
+.btn--outline {
+  @include make-btn--outline($grey-dark);
+}
+
+.btn--full {
+  display: block;
+  width: 100%;
+}
+
+.btn--sm {
+  font-size: .8em;
+}
+
+.btn--xs {
+  font-size: .5em;
+}
+
+.btn--lg {
+  font-size: 1.2em;
+}

@@ -6,7 +6,8 @@ p {
   font-size: 1.2em;
   font-weight: 300;
 
-  a {
+  a:not(.btn){
+    font-weight: bold;
     &::before {
       background: $link-color;
       content: "";
@@ -30,7 +31,6 @@ p {
 
 a {
   color: $link-color;
-  font-weight: bold;
   text-decoration: none;
   position: relative;
 }

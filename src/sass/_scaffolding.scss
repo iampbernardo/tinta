@@ -21,6 +21,15 @@ hr {
   margin: 2em auto;
 }
 
+main:last-of-type {
+  margin-bottom: 2em;
+  &::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
 
 
 ::selection {
