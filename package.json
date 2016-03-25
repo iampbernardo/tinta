@@ -1,0 +1,34 @@
+{
+  "name": "tinta",
+  "version": "1.0.0",
+  "description": "A CSS components libray",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voylinux/tinta.git"
+  },
+  "keywords": [
+    "css",
+    "components"
+  ],
+  "author": "Pablo Bernardo @voylinux",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voylinux/tinta/issues"
+  },
+  "homepage": "https://github.com/voylinux/tinta#readme",
+  "dependencies": {
+    "bower": "^1.7.7",
+    "gulp-coffee": "^2.3.1",
+    "gulp-connect": "^3.2.1",
+    "gulp-sass": "^2.2.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.1",
+    "gulp-serve": "^1.2.0"
+  }
+}
