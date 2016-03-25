@@ -716,3 +716,11 @@ code,
   border-radius: 2px;
   background: #f6f7f8;
   text-shadow: 0px 1px #f1f2f3; }
+
+pre {
+  border: 1px solid #9ea8ad;
+  background: #f6f7f8; }
+  pre code {
+    background: transparent;
+    display: block;
+    border: none; }
