@@ -2,6 +2,25 @@
 
 .main-header {
   background-color: $grey-lighter;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+  }
 }
 
 .main-header__title,
@@ -10,16 +29,24 @@
 }
 
 .main-header__title {
-  color: $grey;
+  color: #FFF;
   margin-bottom: .2em;
+  margin-top: 3em;
 }
 
 .main-header__title--highlight {
-  color: $brand-primary;
+  background-color: #e50c39;
+  color: #FFF;
+  padding: 0 .1em;
+  margin-left: .2em;
 }
 
 .main-header__description {
-  color: $grey-light;
+  color: #FFF;
+}
+
+.main-header--half {
+  min-height: 50vh;
 }
 
 .main-footer {

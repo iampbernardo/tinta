@@ -421,7 +421,8 @@ mark {
 
 blockquote {
   position: relative;
-  margin: 2em 0 2em 3em;
+  display: block;
+  margin: 3.1em 0 2em 3em;
   quotes: none; }
   blockquote::before {
     content: '“';
@@ -457,6 +458,7 @@ a.btn,
 button.btn,
 input.btn {
   border-radius: 3px;
+  display: inline-block;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -619,21 +621,45 @@ main:last-of-type {
       max-width: 1140px; } }
 
 .main-header {
-  background-color: #f1f2f3; }
+  background-color: #f1f2f3;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative; }
+  .main-header > * {
+    position: relative;
+    z-index: 1; }
+  .main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0; }
 
 .main-header__title,
 .main-header__description {
   text-align: center; }
 
 .main-header__title {
-  color: #3A4145;
-  margin-bottom: .2em; }
+  color: #FFF;
+  margin-bottom: .2em;
+  margin-top: 3em; }
 
 .main-header__title--highlight {
-  color: #10599D; }
+  background-color: #e50c39;
+  color: #FFF;
+  padding: 0 .1em;
+  margin-left: .2em; }
 
 .main-header__description {
-  color: #74828a; }
+  color: #FFF; }
+
+.main-header--half {
+  min-height: 50vh; }
 
 .main-footer {
   background-color: #353c3f;

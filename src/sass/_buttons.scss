@@ -1,5 +1,6 @@
 @mixin make-btn($radius: $buttons-radius) {
   border-radius: $radius;
+  display: inline-block;
 }
 
 @mixin make-btn--default($color) {

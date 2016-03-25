@@ -52,7 +52,8 @@ mark {
 
 blockquote {
   position: relative;
-  margin: 2em 0 2em 3em;
+  display: block;
+  margin: 3.1em 0 2em 3em;
   quotes: none;
 
   &::before {
