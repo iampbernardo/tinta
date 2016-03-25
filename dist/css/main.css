@@ -375,7 +375,8 @@ th {
 
 /* Base colors */
 /* Fonts */
-/** Buttons **/
+/* Buttons */
+/* Grid */
 /* Sizes and spaces */
 /* Breakpoints */
 /* Text elements */
@@ -561,6 +562,59 @@ h5,
 h6,
 .h6 {
   font-size: 1.5em; }
+
+/* All you need to understand is in
+  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+.grid {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: flex-start; }
+
+[class^="col-"],
+[class^=" col-"] {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  margin: 0.25em;
+  padding: 0.5em; }
+  [class^="col-"]:last-child,
+  [class^=" col-"]:last-child {
+    margin-right: 0; }
+
+.col-1 {
+  flex: 0 0 calc(8.33333% - 0.5em); }
+
+.col-2 {
+  flex: 0 0 calc(16.66667% - 0.5em); }
+
+.col-3 {
+  flex: 0 0 calc(25% - 0.5em); }
+
+.col-4 {
+  flex: 0 0 calc(33.33333% - 0.5em); }
+
+.col-5 {
+  flex: 0 0 calc(41.66667% - 0.5em); }
+
+.col-6 {
+  flex: 0 0 calc(50% - 0.5em); }
+
+.col-7 {
+  flex: 0 0 calc(58.33333% - 0.5em); }
+
+.col-8 {
+  flex: 0 0 calc(66.66667% - 0.5em); }
+
+.col-9 {
+  flex: 0 0 calc(75% - 0.5em); }
+
+.col-10 {
+  flex: 0 0 calc(83.33333% - 0.5em); }
+
+.col-11 {
+  flex: 0 0 calc(91.66667% - 0.5em); }
 
 html,
 body {

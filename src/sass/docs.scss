@@ -53,3 +53,10 @@
   background-color: $grey-dark;
   color: $grey-lighter;
 }
+
+[class^="col-"],
+[class^=" col-"] {
+  background-color: #e50c39;
+  color: #FFF;
+  text-align: center;
+}

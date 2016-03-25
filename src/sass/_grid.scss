@@ -1,0 +1,29 @@
+/* All you need to understand is in
+  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+.grid {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap; // let elements fall to next line
+  align-content: flex-start;
+}
+
+[class^="col-"],
+[class^=" col-"] {
+  flex-grow: 1; // grow if needed
+  flex-shrink: 0;
+  flex-basis: 100%;
+  margin: $grid-gap / 2;
+  padding: $grid-gap;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+@for $i from 1 to $columns-num {
+  $width : 100 / 12 * $i * 1%;
+  .col-#{$i} {
+    flex: 0 0 calc(#{$width} - #{$grid-gap});
+  }
+}
