@@ -1,10 +1,23 @@
 @import "main.scss";
 
 .main-header {
-  background-color: #1c4c55;
+  background-color: $grey-lighter;
+}
+
+.main-header__title,
+.main-header__description {
+  text-align: center;
 }
 
 .main-header__title {
-  color: #FFF;
-  text-align: center;
+  color: $grey;
+  margin-bottom: .2em;
+}
+
+.main-header__title--highlight {
+  color: $brand-primary;
+}
+
+.main-header__description {
+  color: $grey-light;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Normalize SCSS from https://github.com/JohnAlbin/normalize-scss */
 /* ==========================================================================
    Normalize.scss settings
@@ -376,35 +377,146 @@ th {
 /* Fonts */
 /* Sizes and spaces */
 /* Breakpoints */
+/* Text elements */
+p {
+  line-height: 1.5em;
+  margin-top: 0;
+  font-family: "Droid Serif", serif;
+  font-size: 1.2em;
+  font-weight: 300; }
+  p a::before {
+    background: #353c3f;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    visibility: hidden; }
+  p a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out 0s; }
+
+a {
+  color: #353c3f;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative; }
+
+b,
+strong {
+  color: #353c3f;
+  font-weight: 400; }
+
+em {
+  font-style: italic;
+  color: #74828a; }
+
+mark {
+  background: #FDD638; }
+
+blockquote {
+  position: relative;
+  margin: 2em 0 2em 3em;
+  quotes: none; }
+  blockquote::before {
+    content: '“';
+    color: #3A4145;
+    position: absolute;
+    left: -.6em;
+    top: -.5em;
+    font-size: 5rem; }
+  blockquote p {
+    color: #828f96;
+    font-style: italic;
+    font-size: 1.2em;
+    word-wrap: break-word; }
+    blockquote p span {
+      display: block;
+      margin-top: .5em; }
+      blockquote p span::before {
+        content: '-';
+        position: relative;
+        padding-right: .2em; }
+
+ul,
+ol {
+  margin: 1.5em 0; }
+  ul li,
+  ol li {
+    line-height: 2em; }
+    ul li a,
+    ol li a {
+      border-bottom: 1px dashed #10599D; }
+
 h1,
 .h1 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
 
 h2,
 .h2 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
 
 h3,
 .h3 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
 
 h4,
 .h4 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
 
 h5,
 .h5 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
 
 h6,
 .h6 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
+
+h1,
+.h1 {
+  font-size: 2.8em; }
+
+h2,
+.h2 {
+  font-size: 2.5em; }
+
+h3,
+.h3 {
+  font-size: 2.2em; }
+
+h4,
+.h4 {
+  font-size: 1.9em; }
+
+h5,
+.h5 {
+  font-size: 1.7em; }
+
+h6,
+.h6 {
+  font-size: 1.5em; }
 
 html,
 body {
   font-size: 16px;
-  color: #404040;
+  color: #3A4145;
   height: 100%;
+  letter-spacing: 0.01rem;
   margin: 0;
   padding: 0; }
   html::after,
@@ -413,28 +525,19 @@ body {
     display: table;
     clear: both; }
 
-p {
-  margin-top: 0; }
-
 hr {
   border: 0;
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-
-em {
-  font-style: italic;
-  color: #666666; }
-
-mark {
-  background: #ffbe33; }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 2em auto; }
 
 ::selection {
-  background: #ffbe33;
+  background: #FDD638;
   /* WebKit/Blink Browsers */ }
 
 ::-moz-selection {
-  background: #ffbe33;
+  background: #FDD638;
   /* Gecko Browsers */ }
 
 .container {
@@ -460,8 +563,18 @@ mark {
       max-width: 1140px; } }
 
 .main-header {
-  background-color: #1c4c55; }
+  background-color: #f1f2f3; }
+
+.main-header__title,
+.main-header__description {
+  text-align: center; }
 
 .main-header__title {
-  color: #FFF;
-  text-align: center; }
+  color: #3A4145;
+  margin-bottom: .2em; }
+
+.main-header__title--highlight {
+  color: #10599D; }
+
+.main-header__description {
+  color: #74828a; }

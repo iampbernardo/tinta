@@ -1,15 +1,26 @@
 /* Base colors */
 
-$grey: #404040;
-$grey-dark: darken($grey, 5%);
-$grey-light: lighten($grey, 15%);
-$grey-lighter: lighten($grey-light, 15%);
+$grey: #3A4145;
+$grey-dark: darken($grey, 2%);
+$grey-light: lighten($grey, 25%);
+$grey-lighter: lighten($grey-light, 45%);
 
-$highlight-color: #ffbe33;
+$brand-primary: #10599D;
+
+$link-color: $grey-dark;
+
+$quotes-color: $grey;
+$highlight-color: #FDD638;
 
 /* Fonts */
+$font-sans-serif: 'Open Sans', sans-serif;
+$font-serif: 'Droid Serif', serif;;
+
 $base-font-size: 16px;
 $font-base-color: $grey;
+
+
+
 
 
 /* Sizes and spaces */
