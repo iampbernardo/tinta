@@ -422,6 +422,21 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
+em {
+  font-style: italic;
+  color: #666666; }
+
+mark {
+  background: #ffbe33; }
+
+::selection {
+  background: #ffbe33;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #ffbe33;
+  /* Gecko Browsers */ }
+
 .container {
   display: block;
   margin-left: auto;
@@ -448,4 +463,5 @@ hr {
   background-color: #1c4c55; }
 
 .main-header__title {
-  color: #FFF; }
+  color: #FFF;
+  text-align: center; }

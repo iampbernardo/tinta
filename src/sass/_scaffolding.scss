@@ -24,6 +24,23 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+em {
+  font-style: italic;
+  color: $grey-light;
+}
+
+mark {
+  background: $highlight-color;
+}
+
+::selection {
+  background: $highlight-color; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: $highlight-color; /* Gecko Browsers */
+}
+
 .container {
 @include make-container();
 }
