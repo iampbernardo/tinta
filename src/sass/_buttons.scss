@@ -35,10 +35,15 @@ input.btn {
   font-family: $font-sans-serif;
   padding: $gutter $gutter*2;
   text-align: center;
-  white-space: nowrap;
+  white-space: normal;
+
   &:hover {
     transition: all .3s linear;
   }
+}
+
+.btn + .btn {
+  margin-top: 1em;
 }
 
 .btn--default {

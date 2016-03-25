@@ -3,10 +3,25 @@
 */
 
 .grid {
+  display: table;
   display: flex;
   align-items: stretch;
   flex-wrap: wrap; // let elements fall to next line
   align-content: flex-start;
+  > :first-child {
+    margin-left: 0;
+  }
+  > :last-child {
+    margin-right: 0;
+  }
+}
+
+.grid--between {
+  justify-content: space-between;
+}
+
+.grid--column {
+  flex-direction: column;
 }
 
 [class^="col-"],
@@ -16,12 +31,9 @@
   flex-basis: 100%;
   margin: $grid-gap / 2;
   padding: $grid-gap;
-  &:last-child{
-    margin-right: 0;
-  }
 }
 
-@for $i from 1 to $columns-num {
+@for $i from 1 to $columns-num +1 {
   $width : 100 / 12 * $i * 1%;
   .col-#{$i} {
     flex: 0 0 calc(#{$width} - #{$grid-gap});

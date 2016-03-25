@@ -467,11 +467,14 @@ input.btn {
   font-family: "Open Sans", sans-serif;
   padding: 1em 2em;
   text-align: center;
-  white-space: nowrap; }
+  white-space: normal; }
   a.btn:hover,
   button.btn:hover,
   input.btn:hover {
     transition: all .3s linear; }
+
+.btn + .btn {
+  margin-top: 1em; }
 
 .btn--default {
   background-color: #10599D;
@@ -567,10 +570,21 @@ h6,
   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
 .grid {
+  display: table;
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
   align-content: flex-start; }
+  .grid > :first-child {
+    margin-left: 0; }
+  .grid > :last-child {
+    margin-right: 0; }
+
+.grid--between {
+  justify-content: space-between; }
+
+.grid--column {
+  flex-direction: column; }
 
 [class^="col-"],
 [class^=" col-"] {
@@ -579,9 +593,6 @@ h6,
   flex-basis: 100%;
   margin: 0.25em;
   padding: 0.5em; }
-  [class^="col-"]:last-child,
-  [class^=" col-"]:last-child {
-    margin-right: 0; }
 
 .col-1 {
   flex: 0 0 calc(8.33333% - 0.5em); }
@@ -615,6 +626,9 @@ h6,
 
 .col-11 {
   flex: 0 0 calc(91.66667% - 0.5em); }
+
+.col-12 {
+  flex: 0 0 calc(100% - 0.5em); }
 
 html,
 body {
@@ -673,3 +687,6 @@ main:last-of-type {
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
+
+.container-full {
+  max-width: 100%; }

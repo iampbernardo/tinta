@@ -35,7 +35,7 @@
 }
 
 .main-header__title--highlight {
-  background-color: #e50c39;
+  background-color: $sexy-color;
   color: #FFF;
   padding: 0 .1em;
   margin-left: .2em;
@@ -56,7 +56,7 @@
 
 [class^="col-"],
 [class^=" col-"] {
-  background-color: #e50c39;
+  background-color: $sexy-color;
   color: #FFF;
   text-align: center;
 }
