@@ -444,6 +444,8 @@ hr {
     .container {
       max-width: 1140px; } }
 
-header {
-  background-color: #1c4c55;
+.main-header {
+  background-color: #1c4c55; }
+
+.main-header__title {
   color: #FFF; }

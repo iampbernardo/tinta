@@ -1,7 +1,9 @@
 @import "main.scss";
 
-header {
+.main-header {
   background-color: #1c4c55;
-  color: #FFF;
+}
 
+.main-header__title {
+  color: #FFF;
 }
