@@ -7,20 +7,7 @@
   background-attachment: fixed;
   overflow: hidden;
   position: relative;
-  > * {
-    position: relative;
-    z-index: 1;
-  }
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: 0;
-  }
+  @include pre-cover();
 }
 
 .main-header__title,
@@ -87,6 +74,7 @@
 
 .band {
   padding: 5em;
+  position: relative;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -103,6 +91,11 @@
 .band--sexy {
   color: #FFF;
   background: $sexy-color;
+}
+
+.band--image {
+  color: #FFF;
+  @include pre-cover();
 }
 
 .band__title {
