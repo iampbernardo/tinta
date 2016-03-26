@@ -39,11 +39,3 @@ main:last-of-type {
 ::-moz-selection {
   background: $highlight-color; /* Gecko Browsers */
 }
-
-.container {
-@include make-container();
-}
-
-.container-full {
-max-width: 100%;
-}

@@ -9,9 +9,9 @@ $sexy-color: #e50c39; // Try to have always have some sexy CSS
 
 $brand-primary: #10599D;
 
-$link-color: $grey-dark;
+$link-color: $brand-primary;
 
-$quotes-color: $grey;
+$quotes-color: $grey-light;
 $highlight-color: #FDD638;
 $code-color: $sexy-color;
 
@@ -51,4 +51,11 @@ $container-max-widths: (
   md: 720px,
   lg: 940px,
   xl: 1140px
+) !default;
+
+$content-max-widths: (
+  sm: 556px,
+  md: 700px,
+  lg: 890px,
+  xl: 900px
 ) !default;

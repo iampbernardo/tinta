@@ -29,6 +29,24 @@
   }
 }
 
+@mixin make-content() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $gutter;
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @each $size, $value in $grid-breakpoints {
+    @media (min-width: $value) {
+      max-width: map-get($content-max-widths, $size);
+    }
+  }
+}
+
 @mixin make-circle {
   border-radius: 50% !important;
 }

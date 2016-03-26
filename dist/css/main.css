@@ -384,12 +384,12 @@ p {
   line-height: 1.5em;
   margin-top: 0;
   font-family: "Droid Serif", serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 300; }
   p a:not(.btn) {
     font-weight: bold; }
     p a:not(.btn)::before {
-      background: #353c3f;
+      background: #10599D;
       content: "";
       position: absolute;
       width: 100%;
@@ -408,14 +408,14 @@ p {
       transition: all 0.3s ease-in-out 0s; }
 
 a {
-  color: #353c3f;
+  color: #10599D;
   text-decoration: none;
   position: relative; }
 
 b,
 strong {
   color: #353c3f;
-  font-weight: 400; }
+  font-weight: 700; }
 
 em {
   font-style: italic;
@@ -431,7 +431,7 @@ blockquote {
   quotes: none; }
   blockquote::before {
     content: '“';
-    color: #3A4145;
+    color: #74828a;
     position: absolute;
     left: -.6em;
     top: -.5em;
@@ -562,27 +562,27 @@ h6,
 
 h1,
 .h1 {
-  font-size: 2.8em; }
+  font-size: 2.5em; }
 
 h2,
 .h2 {
-  font-size: 2.5em; }
+  font-size: 2.2em; }
 
 h3,
 .h3 {
-  font-size: 2.2em; }
+  font-size: 2em; }
 
 h4,
 .h4 {
-  font-size: 1.9em; }
+  font-size: 1.8em; }
 
 h5,
 .h5 {
-  font-size: 1.7em; }
+  font-size: 1.5em; }
 
 h6,
 .h6 {
-  font-size: 1.5em; }
+  font-size: 1.3em; }
 
 /* All you need to understand is in
   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -695,6 +695,53 @@ h6,
       -ms-flex: 0 0 calc(100% - 0.5em);
           flex: 0 0 calc(100% - 0.5em); }
 
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em; }
+  .container::after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 544px) {
+    .container {
+      max-width: 576px; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 940px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } }
+
+.container-full {
+  max-width: 100%; }
+
+.content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em; }
+  .content::after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 544px) {
+    .content {
+      max-width: 556px; } }
+  @media (min-width: 768px) {
+    .content {
+      max-width: 700px; } }
+  @media (min-width: 992px) {
+    .content {
+      max-width: 890px; } }
+  @media (min-width: 1200px) {
+    .content {
+      max-width: 900px; } }
+
 html,
 body {
   font-size: 16px;
@@ -734,31 +781,6 @@ main:last-of-type {
 ::-moz-selection {
   background: #FDD638;
   /* Gecko Browsers */ }
-
-.container {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em; }
-  .container::after {
-    content: "";
-    display: table;
-    clear: both; }
-  @media (min-width: 544px) {
-    .container {
-      max-width: 576px; } }
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px; } }
-  @media (min-width: 992px) {
-    .container {
-      max-width: 940px; } }
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px; } }
-
-.container-full {
-  max-width: 100%; }
 
 nav ul {
   padding-left: 0;
