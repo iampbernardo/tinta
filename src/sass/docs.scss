@@ -72,31 +72,6 @@
   }
 }
 
-.band {
-  padding: 5em;
-  position: relative;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  text-align: center;
-  margin-top: 5em;
-  margin-bottom: 5em;
-}
-
-.band--primary {
-  color: #FFF;
-  background: $brand-primary;
-}
-
-.band--sexy {
-  color: #FFF;
-  background: $sexy-color;
-}
-
-.band--image {
-  color: #FFF;
-  @include pre-cover();
-}
 
 .band__title {
   margin-bottom: 0;

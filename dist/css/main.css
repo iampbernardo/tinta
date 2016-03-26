@@ -788,6 +788,39 @@ nav ul {
   nav ul li a {
     text-decoration: none; }
 
+.band {
+  padding: 5em;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 5em; }
+
+.band--primary {
+  color: #FFF;
+  background-color: #10599D; }
+
+.band--sexy {
+  color: #FFF;
+  background-color: #10599D; }
+
+.band--image {
+  color: #FFF; }
+  .band--image > * {
+    position: relative;
+    z-index: 1; }
+  .band--image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0; }
+
 code,
 .code {
   border: 1px solid #9ea8ad;
