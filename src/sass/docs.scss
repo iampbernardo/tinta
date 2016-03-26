@@ -54,9 +54,29 @@
   color: $grey-lighter;
 }
 
-[class^="col-"],
-[class^=" col-"] {
-  background-color: $sexy-color;
+.grid--sexy {
+  [class^="col-"],
+  [class^=" col-"] {
+    background-color: $sexy-color;
+    color: #FFF;
+    text-align: center;
+  }
+}
+
+.sidebar{}
+
+.sidebar__title{
+  background: $brand-primary;
   color: #FFF;
   text-align: center;
+}
+
+.nav__docs__elements{
+  ul {
+    li {
+      a{
+        color: $sexy-color;
+      }
+    }
+  }
 }
