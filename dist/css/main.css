@@ -374,6 +374,7 @@ th {
   box-sizing: border-box; }
 
 /* Base colors */
+/** Default colors **/
 /* Fonts */
 /* Buttons */
 /* Grid */
@@ -459,15 +460,14 @@ ol {
 a.btn,
 button.btn,
 input.btn {
-  border-radius: 3px;
-  display: inline-block;
   border-style: solid;
+  border-radius: 3px;
   border-width: 1px;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  padding: 1em 2em;
   text-align: center;
+  padding: 0.7em 1em;
+  display: inline-block;
+  text-transform: none;
+  cursor: pointer;
   white-space: normal; }
   a.btn:hover,
   button.btn:hover,
@@ -486,12 +486,12 @@ input.btn {
     border-color: #093258; }
 
 .btn--outline {
-  background-color: transparent;
+  background-color: #FFF;
   border-color: #353c3f;
   color: #353c3f; }
   .btn--outline:hover {
     background: #353c3f;
-    border-color: transparent;
+    border-color: #353c3f;
     color: #FFF; }
 
 .btn--sexy {
@@ -503,12 +503,12 @@ input.btn {
     border-color: #9c0827; }
 
 .btn--outline--sexy {
-  background-color: transparent;
+  background-color: #FFF;
   border-color: #e50c39;
   color: #e50c39; }
   .btn--outline--sexy:hover {
     background: #e50c39;
-    border-color: transparent;
+    border-color: #e50c39;
     color: #FFF; }
 
 .btn--full {

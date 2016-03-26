@@ -7,6 +7,7 @@ $grey-lighter: lighten($grey-light, 45%);
 
 $sexy-color: #e50c39; // Try to have always have some sexy CSS
 
+/** Default colors **/
 $brand-primary: #10599D;
 
 $link-color: $brand-primary;
@@ -23,7 +24,16 @@ $base-font-size: 16px;
 $font-base-color: $grey;
 
 /* Buttons */
+$buttons-default-color: #FFF;
 $buttons-radius: 3px;
+$buttons-border-width: 1px;
+$buttons-border-style: solid;
+$buttons-text-align: center;
+$buttons-font-family: $font-sans-serif;
+$buttons-vertical-padding: .7em;
+$buttons-horizontal-padding: 1em;
+$buttons-text-transform: none;
+
 
 /* Grid */
 $columns-num: 12;

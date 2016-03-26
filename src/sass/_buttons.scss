@@ -1,26 +1,39 @@
-@mixin make-btn($radius: $buttons-radius) {
+@mixin make-btn($radius: $buttons-radius,
+  $width: $buttons-border-width,
+  $border-style: $buttons-border-style,
+  $align: $buttons-text-align,
+  $font-family: $buttons-font-family,
+  $v-padding: $buttons-vertical-padding,
+  $h-padding: $buttons-horizontal-padding,
+  $text-transform: $buttons-text-transform) {
+
+  border-style: $border-style;
   border-radius: $radius;
+  border-width: $buttons-border-width;
+  text-align: $align;
+  padding: $v-padding $h-padding;
   display: inline-block;
+  text-transform: $buttons-text-transform;
 }
 
-@mixin make-btn--default($color) {
-  background-color: $color;
-  border-color: $color;
-  color: #FFF;
+@mixin make-btn--default($bg-color, $font-color: $buttons-default-color) {
+  background-color: $bg-color;
+  border-color: $bg-color;
+  color: $font-color;
   &:hover {
-    background-color: darken($color, 15%);
-    border-color: darken($color, 15%);
+    background-color: darken($bg-color, 15%);
+    border-color: darken($bg-color, 15%);
   }
 }
 
-@mixin make-btn--outline($color) {
-  background-color: transparent;
-  border-color: $color;
-  color: $color;
+@mixin make-btn--outline($bg-color: transparent, $font-color: $buttons-default-color) {
+  background-color: $bg-color;
+  border-color: $font-color;
+  color: $font-color;
   &:hover {
-    background: $color;
-    border-color: transparent;
-    color: #FFF;
+    background: $font-color;
+    border-color: $font-color;
+    color: $bg-color;
   }
 }
 
@@ -28,13 +41,7 @@ a.btn,
 button.btn,
 input.btn {
   @include make-btn();
-  border-style: solid;
-  border-width: 1px;
   cursor: pointer;
-  display: inline-block;
-  font-family: $font-sans-serif;
-  padding: $gutter $gutter*2;
-  text-align: center;
   white-space: normal;
 
   &:hover {
@@ -47,19 +54,19 @@ input.btn {
 }
 
 .btn--default {
-  @include make-btn--default($brand-primary);
+  @include make-btn--default($brand-primary, $buttons-default-color);
 }
 
 .btn--outline {
-  @include make-btn--outline($grey-dark);
+  @include make-btn--outline($buttons-default-color, $grey-dark);
 }
 
 .btn--sexy {
-  @include make-btn--default($sexy-color);
+  @include make-btn--default($sexy-color, $buttons-default-color);
 }
 
 .btn--outline--sexy {
-  @include make-btn--outline($sexy-color);
+  @include make-btn--outline($buttons-default-color, $sexy-color);
 }
 
 .btn--full {
