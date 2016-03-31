@@ -1,14 +1,14 @@
 /* Base colors */
 
-$grey: #3A4145;
-$grey-dark: darken($grey, 2%);
-$grey-light: lighten($grey, 25%);
-$grey-lighter: lighten($grey-light, 45%);
+$grey: #606c76 !default;
+$grey-dark: darken($grey, 10%) !default;
+$grey-light:  #d1d1d1 !default;
+$grey-lighter: #f4f5f6 !default;
 
 $sexy-color: #e50c39; // Try to have always have some sexy CSS
 
 /** Default colors **/
-$brand-primary: #10599D;
+$brand-primary: #5ba4e5;
 
 $link-color: $brand-primary;
 
@@ -17,10 +17,10 @@ $highlight-color: #FDD638;
 $code-color: $sexy-color;
 
 /* Fonts */
-$font-sans-serif: 'Open Sans', sans-serif;
+$font-sans-serif: 'Roboto', sans-serif;
 $font-serif: 'Droid Serif', serif;;
 
-$base-font-size: 16px;
+$base-font-size: 1.6em;
 $font-base-color: $grey;
 
 /* Buttons */
@@ -33,6 +33,8 @@ $buttons-font-family: $font-sans-serif;
 $buttons-vertical-padding: .7em;
 $buttons-horizontal-padding: 1em;
 $buttons-text-transform: none;
+
+
 
 
 /* Grid */
